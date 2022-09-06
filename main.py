@@ -3,7 +3,7 @@ import numpy as np
 from getStockBasic import getStockBasic
 from createTable import createTable_stockBasic,createTable_daily
 from getStockDaily import getStockDaily
-
+from chooseTrategy.trendReverse import wMA10MinPlessMA5MinP
 from dailyToGraph import dailyGraph
 from straResearch import MAminPointDate,MAmaxPointDate,volPeak,selectStockData,getStockList,drawMa
 from choTrategy import MA55MinPMA20MinPMA4MinP
@@ -34,7 +34,8 @@ def main():
     #drawMa(df)
     #print(MAminPointDate(df['MA20']))
     #print(volPeak(df))
-    MA55MinPMA20MinPMA4MinP()
+    #MA55MinPMA20MinPMA4MinP()
+    wMA10MinPlessMA5MinP()
 
 
 if __name__ == '__main__':
